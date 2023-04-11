@@ -28,6 +28,7 @@ app.use(session({ secret: 'conduit', cookie: { maxAge: 60000 }, resave: false, s
 
 if (!isProduction) {
   app.use(errorhandler());
+  
 }
 
 if(isProduction){
